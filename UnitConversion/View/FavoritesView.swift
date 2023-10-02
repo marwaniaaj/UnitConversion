@@ -9,6 +9,7 @@ import SwiftUI
 
 struct FavoritesView: View {
     @EnvironmentObject var dataProvider: DataProvider
+    static let tag: String? = "Favorites"
 
     var groupedFavorite: [[UnitConversion]] {
         Dictionary(

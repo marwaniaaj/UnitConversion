@@ -9,6 +9,7 @@ import SwiftUI
 
 struct UnitsView: View {
     @EnvironmentObject var dataProvider: DataProvider
+    static let tag: String? = "Units"
 
     var body: some View {
         NavigationStack {
