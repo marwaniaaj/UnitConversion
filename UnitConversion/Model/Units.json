@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Area",
+        "icon": "square.grid.3x3.square"
+    },
+    {
+        "name": "Length",
+        "icon": "ruler"
+    },
+    {
+        "name": "Volume",
+        "icon": "circle.hexagongrid"
+    },
+    {
+        "name": "Mass",
+        "icon": "scalemass",
+    },
+    {
+        "name": "Speed",
+        "icon": "speedometer"
+    },
+    {
+        "name": "Temperature",
+        "icon": "thermometer"
+    }
+]
