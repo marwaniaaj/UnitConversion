@@ -33,7 +33,7 @@ struct FavoritesView: View {
                                     Spacer()
 
                                     Image(systemName: "arrow.right")
-                                        .foregroundColor(Color.accentColor)
+                                        .foregroundStyle(.tint)
 
                                     Spacer()
 
@@ -45,7 +45,7 @@ struct FavoritesView: View {
                         Text(groupedConversions[0].unit)
                             .font(.title3)
                             .textCase(.none)
-                            .foregroundColor(Color.accentColor)
+                            .foregroundStyle(.tint)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.bottom, 4)
                     }

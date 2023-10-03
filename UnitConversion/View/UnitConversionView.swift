@@ -99,7 +99,7 @@ struct UnitConversionView: View {
                 Text("Amount to convert")
                     .font(.body)
                     .textCase(.none)
-                    .foregroundColor(Color.accentColor)
+                    .foregroundStyle(.tint)
             }
 
             Section {
@@ -108,7 +108,7 @@ struct UnitConversionView: View {
                 Text("Result")
                     .font(.body)
                     .textCase(.none)
-                    .foregroundColor(Color.accentColor)
+                    .foregroundStyle(.tint)
             }
         }
         .navigationTitle(LocalizedStringKey(unit.name))
@@ -118,11 +118,9 @@ struct UnitConversionView: View {
                 Button {
                     toggleFavorite()
                 } label: {
-                    Label(
-                        "Toggle favorite",
-                        systemImage: isFavorite ? "star.fill" : "star"
-                    )
-                    .foregroundColor(Color.accentColor)
+                    Label("Toggle favorite", systemImage: "star")
+                        .symbolVariant(isFavorite ? .fill : .none)
+                        .foregroundStyle(.tint)
                 }
             }
         }

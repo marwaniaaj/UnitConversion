@@ -20,11 +20,11 @@ struct UnitsView: View {
                             Image(systemName: unit.icon)
                                 .font(.title2)
                                 .frame(width: 32, height: 32)
-                                .foregroundColor(Color.accentColor)
+                                .foregroundStyle(.tint)
 
                             Text(LocalizedStringKey(unit.name))
                                 .font(.title3)
-                                .foregroundColor(.primary)
+                                .foregroundStyle(.primary)
 
                             Spacer()
                         }
